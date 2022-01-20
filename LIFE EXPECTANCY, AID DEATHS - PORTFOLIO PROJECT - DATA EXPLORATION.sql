@@ -47,12 +47,12 @@ ORDER BY "Life expectancy" DESC
 — — SHOW LIFE EXPECTANCY IN UNITED STATES:
 
 
-SELECT “ENTITY”, 
-       “CODE”
-       “YEAR”
-       “LIFE EXPECTANCY”
-  FROM “LIFE-EXPECTANCY”
-  WHERE “ENTITY” LIKE ‘United States’
+SELECT “Entity”, 
+       “Code”
+       “Year”
+       “Life Expectancy”
+  FROM “Life-Expectancy”
+  WHERE “Entity” LIKE ‘United States’
   ORDER 1,2
 
 
@@ -60,12 +60,12 @@ SELECT “ENTITY”,
 — — SHOW LIFE EXPECTANCY IN UNITED STATES FROM 1999-2019:
 
 
-SELECT “ENTITY”, 
-       “CODE”
-       “YEAR”
-       “LIFE EXPECTANCY”
-  FROM “LIFE-EXPECTANCY”
-  WHERE “ENTITY” LIKE ‘United States’ AND
+SELECT “Entity”, 
+       “Code”
+       “Year”
+       “Life Expectancy”
+  FROM “Life-Expectancy”
+  WHERE “Entity” LIKE ‘United States’ AND
   "Year" Between '1999' AND '2019'
 
 
@@ -81,7 +81,7 @@ FROM "life-expectancy"
 
 — — CREATE TABLE WITH LIFE EXPECTANCY IN UNITED STATES FROM 1999-2019:
 
-CREATE TABLE US_LIFE_EXPECTANCY AS
+CREATE TABLE us_life_expectancy AS
 SELECT *
 FROM "life-expectancy"
 WHERE "Entity" Like 'United States' and
