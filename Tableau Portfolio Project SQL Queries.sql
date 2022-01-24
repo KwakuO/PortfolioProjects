@@ -42,7 +42,7 @@ WHERE "Entity" = 'Africa' AND
 
 4.
 
-— — Show Life Expectancy In Every Country In North America In 2019 (Bar Graph)
+— — Show Life Expectancy In Every Country In North America In 2019 (Map Graph)
 
 SELECT *
 FROM "life-expectancy"
